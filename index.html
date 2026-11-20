@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Tech Ventures | VIP Refer & Earn</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <div class="logo">🚀 GlobalTech VIP</div>
+    <nav>
+      <a href="index.html" class="active">डैशबोर्ड</a>
+      <a href="about.html">कंपनी परिचय (About Us)</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    
+    <!-- Hero Section -->
+    <div class="hero">
+      <h1>सुरक्षित निवेश और हाई-यील्ड पार्टनर प्रोग्राम</h1>
+      <p>अपनी टीम बनाएं, लेवल-वाइज कमीशन प्राप्त करें और दैनिक रिटर्न का आनंद लें।</p>
+    </div>
+
+    <!-- Referral Link Box -->
+    <div class="card">
+      <h2>🔗 आपका यूनिक रेफरल लिंक</h2>
+      <p style="color: var(--text-muted); margin-bottom: 10px;">इस लिंक को अपने दोस्तों के साथ शेयर करें। जब वे जुड़ेंगे और रिचार्ज करेंगे, तो आपको लेवल कमिशन मिलेगा।</p>
+      <div style="display: flex; gap: 10px;">
+        <input type="text" id="refLink" value="https://globaltech.vip/register?ref=VIP_USER_99" readonly>
+        <button onclick="copyRefLink()" style="width: 150px;">कॉपी करें</button>
+      </div>
+    </div>
+
+    <!-- Live Stats Dashboard -->
+    <div class="grid-2">
+      <div class="card">
+        <h2>💰 वॉलेट बैलेंस</h2>
+        <h3 id="walletBalance" style="font-size: 2rem; color: #10b981;">₹0.00</h3>
+        <p style="color: var(--text-muted); margin-top: 5px;">न्यूनतम विथड्रॉल: ₹200</p>
+        <button style="margin-top: 15px;" onclick="alert('बैंक डिटेल्स सेव करें और विथड्रॉल रिक्वेस्ट लगाएं।')">विथड्रॉल करें</button>
+      </div>
+
+      <div class="card">
+        <h2>👥 मेरी टीम (My Team)</h2>
+        <p><strong>Level 1 (डायरेक्ट):</strong> <span id="lvl1Count">0</span> यूजर्स</p>
+        <p><strong>Level 2:</strong> <span id="lvl2Count">0</span> यूजर्स</p>
+        <p style="margin-top: 15px; color: var(--accent-gold);">कुल कमिशन अर्निंग: ₹0.00</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
